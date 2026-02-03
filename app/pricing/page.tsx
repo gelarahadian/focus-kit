@@ -10,10 +10,9 @@ import { User } from "@supabase/supabase-js";
 export default function PricingPage() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
-  const searchParams = useSearchParams();
   const [user, setUser] = useState<User | null>(null);
 
-  const supabase = createClient()
+  const supabase = createClient();
 
   useEffect(() => {
     const getUser = async () => {
@@ -25,34 +24,26 @@ export default function PricingPage() {
     getUser();
   }, []);
 
-  console.log(user)
+  const handleUpgrade = async () => {
+    setLoading(true);
 
-  const canceled = searchParams.get("canceled");
+    const res = await fetch("/api/stripe/checkout", {
+      method: "POST",
+    });
 
-    const handleUpgrade = async () => {
-    setLoading(true)
-
-    const res = await fetch('/api/stripe/checkout', {
-        method: 'POST',
-    })
-
-    const data = await res.json()
+    const data = await res.json();
 
     if (data.url) {
-        window.location.href = data.url
+      window.location.href = data.url;
     } else {
-        alert('Error creating checkout')
+      alert("Error creating checkout");
     }
 
-    setLoading(false)
-    }
-
-
-
+    setLoading(false);
+  };
   return (
     <div className="min-h-screen bg-linear-to-br from-blue-50 via-white to-purple-50 py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        {canceled && <p>Payment canceled</p>}
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

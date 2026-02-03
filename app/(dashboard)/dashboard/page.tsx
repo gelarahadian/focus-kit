@@ -1,16 +1,10 @@
-'use client'
+import { Suspense } from "react";
+import DashboardClient from "./DashboardClient";
 
-import { useSearchParams } from 'next/navigation';
-
-const page = () => {
-    const searchParams = useSearchParams();
-    const success = searchParams.get("success");
+export default function Page() {
   return (
-    <div>
-         {
-      success && <p>Payment Success 🎉</p>
-    }page</div>
-  )
+    <Suspense fallback={<p>Loading...</p>}>
+      <DashboardClient />
+    </Suspense>
+  );
 }
-
-export default page
