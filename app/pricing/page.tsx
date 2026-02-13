@@ -6,9 +6,9 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { User } from "@supabase/supabase-js";
+import { toast } from "sonner";
 
 export default function PricingPage() {
-  const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [user, setUser] = useState<User | null>(null);
 
@@ -36,7 +36,7 @@ export default function PricingPage() {
     if (data.url) {
       window.location.href = data.url;
     } else {
-      alert("Error creating checkout");
+      toast.error("Error creating checkout");
     }
 
     setLoading(false);

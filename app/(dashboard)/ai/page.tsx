@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { toast } from "sonner";
 
 export default function AIPage() {
   const [prompt, setPrompt] = useState("");
@@ -25,12 +26,12 @@ export default function AIPage() {
       const data = await res.json();
 
       if (data.error) {
-        alert(data.error);
+        toast.error(data.error);
       } else {
         setResult(data.result);
       }
     } catch (error) {
-      alert("Terjadi kesalahan. Silakan coba lagi.");
+      toast.error("Terjadi kesalahan. Silakan coba lagi.");
     } finally {
       setLoading(false);
     }

@@ -3,25 +3,26 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
+import { toast } from "sonner";
 
 export default function RegisterPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [loading, setLoading] = useState(false);
-  const supabase = createClient()
+  const supabase = createClient();
   const router = useRouter();
 
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (password !== confirmPassword) {
-      alert("Password tidak cocok!");
+      toast.error("Password tidak cocok!");
       return;
     }
 
     if (password.length < 6) {
-      alert("Password minimal 6 karakter!");
+      toast.error("Password minimal 6 karakter!");
       return;
     }
 
@@ -32,10 +33,12 @@ export default function RegisterPage() {
     });
 
     if (error) {
-      alert(error.message);
+      toast.error(error.message);
       setLoading(false);
     } else {
-      alert("Pendaftaran berhasil! Silakan cek email Anda untuk verifikasi.");
+      toast.success(
+        "Pendaftaran berhasil! Silakan cek email Anda untuk verifikasi.",
+      );
       router.push("/login");
     }
   };
