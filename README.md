@@ -8,12 +8,15 @@ AI-powered productivity toolkit with subscription billing.
   - password: Gelarahadian1
 
 ## Screenshots
+- Landing Page
+![Screenshot Landing Page](public/landing-page.png)
+- AI Generator
+![Screenshot AI Generator](public/ai-generator.png)
 - Pricing Page
 ![Screenshot Pricing](public/pricing.png)
 - Billing Page
 ![Screenshot Billing](public/billing.png)
-- AI Generator
-![Screenshot AI Generator](public/ai-generator.png)
+
 
 ## Features
 - Authentication (Supabase)

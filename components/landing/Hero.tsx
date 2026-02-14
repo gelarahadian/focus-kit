@@ -40,16 +40,10 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4"
           >
             <Link
-              href="#"
+              href="/register"
               className="bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-secondary transition-all hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-1 text-center"
             >
-              Coba Gratis 14 Hari
-            </Link>
-            <Link
-              href="#"
-              className="border-2 border-dark text-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-dark hover:text-white transition-all hover:-translate-y-1 text-center"
-            >
-              Lihat Demo
+              Coba Gratis
             </Link>
           </motion.div>
         </div>

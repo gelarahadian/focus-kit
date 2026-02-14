@@ -172,7 +172,7 @@ export default function PricingPage() {
                     onClick={() => handleUpgrade()}
                     className={`cursor-pointer w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed ${
                       plan.id === "pro"
-                        ? "bg-gradient-to-r from-secondary to-primary text-white hover:from-secondary/80 hover:to-secondary shadow-lg hover:shadow-xl"
+                        ? "bg-gradient-to-r from-secondary to-primary text-white hover:from-primary hover:to-secondary shadow-lg hover:shadow-xl"
                         : "bg-gray-900 text-white hover:bg-gray-800"
                     }`}
                   >

@@ -74,12 +74,12 @@ function PricingCard({
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       className={`relative bg-white rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 ${
-        plan.id === "pro" ? "ring-2 ring-purple-500 scale-105" : ""
+        plan.id === "pro" ? "ring-2 ring-secondary scale-105" : ""
       }`}
     >
       {plan.id === "pro" && (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-          <span className="bg-linear-to-r from-purple-500 to-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
+          <span className="bg-linear-to-r from-secondary to-primary text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
             Paling Populer
           </span>
         </div>
@@ -92,8 +92,8 @@ function PricingCard({
             plan.id === "free"
               ? "bg-gray-100"
               : plan.id === "pro"
-                ? "bg-gradient-to-br from-purple-500 to-blue-600"
-                : "bg-gradient-to-br from-blue-500 to-purple-600"
+                ? "bg-gradient-to-br from-secondary to-primary"
+                : "bg-gradient-to-br from-primary to-secondary"
           }`}
         >
           <svg
@@ -178,7 +178,7 @@ function PricingCard({
           <button
             className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed ${
               plan.id === "pro"
-                ? "bg-gradient-to-r from-purple-500 to-blue-600 text-white hover:from-purple-600 hover:to-blue-700 shadow-lg hover:shadow-xl"
+                ? "bg-linear-to-r from-secondary to-primary text-white hover:from-primary hover:to-secondary shadow-lg hover:shadow-xl"
                 : "bg-gray-900 text-white hover:bg-gray-800"
             }`}
           >

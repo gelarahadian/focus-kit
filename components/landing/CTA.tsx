@@ -31,7 +31,7 @@ export default function CTA() {
             14 hari, tanpa kartu kredit.
           </p>
           <Link
-            href="#"
+            href="/register"
             className="inline-block bg-white text-primary px-10 py-5 rounded-full font-bold text-lg hover:bg-accent hover:text-dark transition-all hover:shadow-2xl hover:-translate-y-1"
           >
             Mulai Gratis Sekarang
