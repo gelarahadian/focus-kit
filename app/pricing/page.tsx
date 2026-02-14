@@ -61,13 +61,13 @@ export default function PricingPage() {
             <div
               key={plan.id}
               className={`relative bg-white rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 ${
-                plan.id === "pro" ? "ring-2 ring-purple-500 scale-105" : ""
+                plan.id === "pro" ? "ring-2 ring-secondary scale-105" : ""
               }`}
             >
               {/* Popular Badge */}
               {plan.id === "pro" && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
+                  <span className="bg-gradient-to-r from-secondary to-primary text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
                     Paling Populer
                   </span>
                 </div>
@@ -80,7 +80,7 @@ export default function PricingPage() {
                     plan.id === "free"
                       ? "bg-gray-100"
                       : plan.id === "pro"
-                        ? "bg-gradient-to-br from-purple-500 to-blue-600"
+                        ? "bg-gradient-to-br from-secondary to-primary"
                         : "bg-gradient-to-br from-blue-500 to-purple-600"
                   }`}
                 >
@@ -170,9 +170,9 @@ export default function PricingPage() {
                   <button
                     disabled={loading}
                     onClick={() => handleUpgrade()}
-                    className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed ${
+                    className={`cursor-pointer w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed ${
                       plan.id === "pro"
-                        ? "bg-gradient-to-r from-purple-500 to-blue-600 text-white hover:from-purple-600 hover:to-blue-700 shadow-lg hover:shadow-xl"
+                        ? "bg-gradient-to-r from-secondary to-primary text-white hover:from-secondary/80 hover:to-secondary shadow-lg hover:shadow-xl"
                         : "bg-gray-900 text-white hover:bg-gray-800"
                     }`}
                   >
@@ -221,7 +221,7 @@ export default function PricingPage() {
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700"
+            className="inline-flex items-center text-secondar y font-semibold hover:text-secondary/80"
           >
             Hubungi Kami
             <svg

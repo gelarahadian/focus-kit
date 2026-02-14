@@ -70,7 +70,7 @@ export default async function BillingPage() {
             </div>
             <div className="hidden md:block">
               <svg
-                className="w-16 h-16 text-purple-500"
+                className="w-16 h-16 text-primary"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -90,9 +90,7 @@ export default async function BillingPage() {
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
           <div
             className={`p-6 ${
-              isPro
-                ? "bg-linear-to-r from-purple-500 to-blue-600"
-                : "bg-gray-800"
+              isPro ? "bg-linear-to-r from-secondary to-primary" : "bg-gray-800"
             }`}
           >
             <div className="flex items-center justify-between">
@@ -124,7 +122,7 @@ export default async function BillingPage() {
 
               {profile?.plan === "free" && (
                 <a href="/pricing" className="flex-1">
-                  <button className="w-full bg-gradient-to-r from-purple-500 to-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-purple-600 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl">
+                  <button className="w-full bg-linear-to-r from-primary to-secondary text-white py-3 px-6 rounded-lg font-semibold hover:from-primary/80 hover:to-secondary/80 transition-all shadow-lg hover:shadow-xl">
                     <span className="flex items-center justify-center">
                       <svg
                         className="w-5 h-5 mr-2"

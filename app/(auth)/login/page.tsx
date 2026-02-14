@@ -35,7 +35,7 @@ export default function LoginPage() {
         <div className="bg-white rounded-2xl shadow-xl p-8 space-y-6">
           {/* Header */}
           <div className="text-center space-y-2">
-            <div className="w-16 h-16 bg-linear-to-br from-blue-500 to-purple-600 rounded-full mx-auto flex items-center justify-center">
+            <div className="w-16 h-16 bg-secondary rounded-full mx-auto flex items-center justify-center">
               <svg
                 className="w-8 h-8 text-white"
                 fill="none"
@@ -70,7 +70,7 @@ export default function LoginPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="nama@email.com"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all"
               />
             </div>
 
@@ -88,14 +88,14 @@ export default function LoginPage() {
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all"
               />
             </div>
 
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-linear-to-r from-blue-500 to-purple-600 text-white py-3 rounded-lg font-medium hover:from-blue-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-secondary text-white py-3 rounded-lg font-medium hover:bg-primary hover:shadow-lg hover:shadow-primary/30 transition-all hover:-translate-y-0.5 disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
             >
               {loading ? (
                 <span className="flex items-center justify-center">
@@ -131,7 +131,7 @@ export default function LoginPage() {
           <div className="text-center space-y-3 pt-4">
             <a
               href="#"
-              className="text-sm text-blue-600 hover:text-blue-700 hover:underline"
+              className="text-sm text-secondary hover:text-primary hover:underline"
             >
               Lupa password?
             </a>
@@ -139,7 +139,7 @@ export default function LoginPage() {
               Belum punya akun?{" "}
               <button
                 onClick={() => router.push("/register")}
-                className="text-blue-600 font-medium hover:text-blue-700 hover:underline"
+                className="text-secondary font-medium hover:text-primary hover:underline"
               >
                 Daftar sekarang
               </button>

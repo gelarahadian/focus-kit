@@ -55,7 +55,7 @@ export default function AIPage() {
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-linear-to-br from-indigo-500 to-purple-600 rounded-2xl mb-4 shadow-lg">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-linear-to-br from-secondary to-primary rounded-2xl mb-4 shadow-lg">
             <svg
               className="w-8 h-8 text-white"
               fill="none"
@@ -85,7 +85,7 @@ export default function AIPage() {
             <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8">
               <div className="flex items-center mb-4">
                 <svg
-                  className="w-6 h-6 text-indigo-500 mr-3"
+                  className="w-6 h-6 text-secondary mr-3"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -131,7 +131,7 @@ export default function AIPage() {
               <button
                 onClick={handleGenerate}
                 disabled={loading || !prompt.trim()}
-                className="w-full mt-6 bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-4 rounded-xl font-semibold hover:from-indigo-600 hover:to-purple-700 focus:outline-none focus:ring-4 focus:ring-indigo-300 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
+                className="w-full mt-6 bg-secondary cursor-pointer text-white py-4 rounded-xl font-semibold hover:from-indigo-600 hover:to-purple-700 focus:outline-none focus:ring-4 focus:ring-indigo-300 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
               >
                 {loading ? (
                   <span className="flex items-center justify-center">
@@ -184,7 +184,7 @@ export default function AIPage() {
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center">
                     <svg
-                      className="w-6 h-6 text-green-500 mr-3"
+                      className="w-6 h-6 text-secondary mr-3"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -205,7 +205,7 @@ export default function AIPage() {
                       navigator.clipboard.writeText(result);
                       alert("Berhasil disalin ke clipboard!");
                     }}
-                    className="text-indigo-600 hover:text-indigo-700 font-medium text-sm flex items-center"
+                    className="text-secondary hover:text-secondary/80 font-medium text-sm flex items-center"
                   >
                     <svg
                       className="w-5 h-5 mr-1"
@@ -238,7 +238,7 @@ export default function AIPage() {
             <div className="bg-white rounded-2xl shadow-lg p-6">
               <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
                 <svg
-                  className="w-5 h-5 text-purple-500 mr-2"
+                  className="w-5 h-5 text-secondary mr-2"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -266,7 +266,7 @@ export default function AIPage() {
             </div>
 
             {/* Tips Card */}
-            <div className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl shadow-lg p-6 text-white">
+            <div className="bg-linear-to-br from-secondary to-primary rounded-2xl shadow-lg p-6 text-white">
               <h3 className="text-lg font-bold mb-3 flex items-center">
                 <svg
                   className="w-5 h-5 mr-2"

@@ -49,7 +49,7 @@ export default function RegisterPage() {
         <div className="bg-white rounded-2xl shadow-xl p-8 space-y-6">
           {/* Header */}
           <div className="text-center space-y-2">
-            <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-600 rounded-full mx-auto flex items-center justify-center">
+            <div className="w-16 h-16 bg-secondary rounded-full mx-auto flex items-center justify-center">
               <svg
                 className="w-8 h-8 text-white"
                 fill="none"
@@ -84,7 +84,7 @@ export default function RegisterPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="nama@email.com"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all"
               />
             </div>
 
@@ -102,7 +102,7 @@ export default function RegisterPage() {
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Minimal 6 karakter"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all"
               />
             </div>
 
@@ -120,7 +120,7 @@ export default function RegisterPage() {
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 placeholder="Ulangi password"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all"
               />
             </div>
 
@@ -151,7 +151,7 @@ export default function RegisterPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-gradient-to-r from-purple-500 to-blue-600 text-white py-3 rounded-lg font-medium hover:from-purple-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-secondary text-white py-3 rounded-lg font-medium hover:bg-primary hover:shadow-lg hover:shadow-primary/30 transition-all hover:-translate-y-0.5 disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
             >
               {loading ? (
                 <span className="flex items-center justify-center">
