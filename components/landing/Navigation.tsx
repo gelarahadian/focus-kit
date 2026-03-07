@@ -30,35 +30,35 @@ export default function Navigation() {
               href="#features"
               className="text-dark hover:text-primary transition-colors relative group"
             >
-              Fitur
+              Features
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
             </Link>
             <Link
               href="#pricing"
               className="text-dark hover:text-primary transition-colors relative group"
             >
-              Harga
+              Pricing
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
             </Link>
             <Link
               href="#about"
               className="text-dark hover:text-primary transition-colors relative group"
             >
-              Tentang
+              About
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
             </Link>
             <Link
               href="#contact"
               className="text-dark hover:text-primary transition-colors relative group"
             >
-              Kontak
+              Contact
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
             </Link>
             <Link
               href="/register"
               className="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-secondary hover:shadow-lg hover:shadow-primary/30 transition-all hover:-translate-y-0.5"
             >
-              Mulai Gratis
+              Get Started Free
             </Link>
           </div>
 
@@ -82,31 +82,31 @@ export default function Navigation() {
               href="#features"
               className="block text-dark hover:text-primary transition-colors"
             >
-              Fitur
+              Features
             </Link>
             <Link
               href="#pricing"
               className="block text-dark hover:text-primary transition-colors"
             >
-              Harga
+              Pricing
             </Link>
             <Link
               href="#about"
               className="block text-dark hover:text-primary transition-colors"
             >
-              Tentang
+              About
             </Link>
             <Link
               href="#contact"
               className="block text-dark hover:text-primary transition-colors"
             >
-              Kontak
+              Contact
             </Link>
             <Link
               href="/register"
               className="block text-center bg-primary text-white px-6 py-3 rounded-full font-semibold"
             >
-              Mulai Gratis
+              Get Started Free
             </Link>
           </motion.div>
         )}

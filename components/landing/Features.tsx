@@ -9,42 +9,42 @@ const features = [
     icon: "🤖",
     title: "AI Assistant",
     description:
-      "Asisten AI yang memahami konteks pekerjaan Anda dan memberikan saran cerdas untuk menyelesaikan tugas lebih efisien.",
+      "An AI assistant that understands the context of your work and provides smart suggestions to complete tasks more efficiently.",
     gradient: "from-purple-400 to-purple-600",
   },
   {
     icon: "📊",
-    title: "Analisis Produktivitas",
+    title: "Productivity Analytics",
     description:
-      "Dashboard analitik yang menampilkan metrik produktivitas, pola kerja, dan rekomendasi untuk peningkatan performa.",
+      "An analytics dashboard that displays productivity metrics, work patterns, and recommendations for performance improvement.",
     gradient: "from-pink-400 to-red-500",
   },
   {
     icon: "⚡",
-    title: "Otomasi Pintar",
+    title: "Smart Automation",
     description:
-      "Otomatiskan tugas berulang dengan workflow AI yang belajar dari kebiasaan kerja Anda dan menghemat waktu berharga.",
+      "Automate repetitive tasks with AI workflows that learn from your work habits and save you valuable time.",
     gradient: "from-cyan-400 to-blue-500",
   },
   {
     icon: "🎯",
-    title: "Manajemen Tugas",
+    title: "Task Management",
     description:
-      "Kelola proyek dan tugas dengan sistem prioritas cerdas yang membantu Anda fokus pada hal yang paling penting.",
+      "Manage projects and tasks with an intelligent priority system that helps you focus on what matters most.",
     gradient: "from-purple-400 to-purple-600",
   },
   {
     icon: "🔗",
-    title: "Integrasi Seamless",
+    title: "Seamless Integrations",
     description:
-      "Terhubung dengan 100+ aplikasi favorit Anda seperti Slack, Google Workspace, Notion, dan banyak lagi.",
+      "Connect with 100+ of your favorite apps like Slack, Google Workspace, Notion, and many more.",
     gradient: "from-pink-400 to-red-500",
   },
   {
     icon: "🔒",
-    title: "Keamanan Terjamin",
+    title: "Enterprise-Grade Security",
     description:
-      "Enkripsi end-to-end dan compliance dengan standar keamanan internasional untuk melindungi data Anda.",
+      "End-to-end encryption and compliance with international security standards to keep your data protected.",
     gradient: "from-cyan-400 to-blue-500",
   },
 ];
@@ -103,11 +103,10 @@ export default function Features() {
           className="text-center mb-16"
         >
           <h2 className="font-display text-5xl md:text-6xl font-bold mb-4 text-dark">
-            Fitur Unggulan
+            Key Features
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Semua yang Anda butuhkan untuk meningkatkan produktivitas kerja dan
-            pribadi
+            Everything you need to boost your work and personal productivity
           </p>
         </motion.div>
 

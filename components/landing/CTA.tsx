@@ -23,18 +23,18 @@ export default function CTA() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="font-display text-4xl md:text-6xl font-bold mb-6">
-            Siap Meningkatkan Produktivitas Anda?
+            Ready to Supercharge Your Productivity?
           </h2>
           <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto">
-            Bergabunglah dengan ribuan profesional yang telah meningkatkan
-            produktivitas mereka hingga 300% dengan FocusKit. Coba gratis selama
-            14 hari, tanpa kartu kredit.
+            Join thousands of professionals who have boosted their productivity
+            by up to 300% with FocusKit. Try free for 14 days — no credit card
+            required.
           </p>
           <Link
             href="/register"
             className="inline-block bg-white text-primary px-10 py-5 rounded-full font-bold text-lg hover:bg-accent hover:text-dark transition-all hover:shadow-2xl hover:-translate-y-1"
           >
-            Mulai Gratis Sekarang
+            Start for Free Today
           </Link>
         </motion.div>
       </div>

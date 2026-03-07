@@ -9,21 +9,21 @@ export default function Footer() {
           <div>
             <h4 className="font-display text-2xl font-bold mb-4">FocusKit</h4>
             <p className="text-white/70 leading-relaxed">
-              Toolkit produktivitas AI untuk profesional modern. Tingkatkan
-              efisiensi, capai lebih banyak.
+              An AI productivity toolkit for modern professionals. Boost
+              efficiency, achieve more.
             </p>
           </div>
 
           {/* Product Links */}
           <div>
-            <h4 className="font-display text-xl font-semibold mb-4">Produk</h4>
+            <h4 className="font-display text-xl font-semibold mb-4">Product</h4>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="#"
                   className="text-white/70 hover:text-primary transition-colors"
                 >
-                  Fitur
+                  Features
                 </Link>
               </li>
               <li>
@@ -31,7 +31,7 @@ export default function Footer() {
                   href="#"
                   className="text-white/70 hover:text-primary transition-colors"
                 >
-                  Harga
+                  Pricing
                 </Link>
               </li>
               <li>
@@ -39,7 +39,7 @@ export default function Footer() {
                   href="#"
                   className="text-white/70 hover:text-primary transition-colors"
                 >
-                  Integrasi
+                  Integrations
                 </Link>
               </li>
               <li>
@@ -55,16 +55,14 @@ export default function Footer() {
 
           {/* Company Links */}
           <div>
-            <h4 className="font-display text-xl font-semibold mb-4">
-              Perusahaan
-            </h4>
+            <h4 className="font-display text-xl font-semibold mb-4">Company</h4>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="#"
                   className="text-white/70 hover:text-primary transition-colors"
                 >
-                  Tentang Kami
+                  About Us
                 </Link>
               </li>
               <li>
@@ -80,7 +78,7 @@ export default function Footer() {
                   href="#"
                   className="text-white/70 hover:text-primary transition-colors"
                 >
-                  Karir
+                  Careers
                 </Link>
               </li>
               <li>
@@ -88,7 +86,7 @@ export default function Footer() {
                   href="#"
                   className="text-white/70 hover:text-primary transition-colors"
                 >
-                  Kontak
+                  Contact
                 </Link>
               </li>
             </ul>

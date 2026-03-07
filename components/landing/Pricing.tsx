@@ -6,57 +6,6 @@ import { useRef } from "react";
 import Link from "next/link";
 import { plans } from "@/lib/plans";
 
-const pricingPlans = [
-  {
-    name: "Starter",
-    price: "$9",
-    period: "/bulan",
-    features: [
-      "AI Assistant Basic",
-      "Hingga 100 tugas/bulan",
-      "Analisis produktivitas dasar",
-      "5 integrasi aplikasi",
-      "1 GB penyimpanan",
-      "Email support",
-    ],
-    cta: "Pilih Starter",
-    featured: false,
-  },
-  {
-    name: "Professional",
-    price: "$29",
-    period: "/bulan",
-    badge: "Paling Populer",
-    features: [
-      "AI Assistant Advanced",
-      "Unlimited tugas",
-      "Analisis produktivitas lengkap",
-      "Unlimited integrasi",
-      "50 GB penyimpanan",
-      "Otomasi workflow",
-      "Priority support",
-    ],
-    cta: "Pilih Professional",
-    featured: true,
-  },
-  {
-    name: "Enterprise",
-    price: "Custom",
-    period: "",
-    features: [
-      "Semua fitur Professional",
-      "Custom AI training",
-      "Dedicated account manager",
-      "Unlimited penyimpanan",
-      "Advanced security",
-      "SLA 99.9% uptime",
-      "24/7 support",
-    ],
-    cta: "Hubungi Kami",
-    featured: false,
-  },
-];
-
 function PricingCard({
   plan,
   index,
@@ -80,7 +29,7 @@ function PricingCard({
       {plan.id === "pro" && (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2">
           <span className="bg-linear-to-r from-secondary to-primary text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
-            Paling Populer
+            Most Popular
           </span>
         </div>
       )}
@@ -133,13 +82,13 @@ function PricingCard({
         {/* Price */}
         <div className="mb-6">
           {plan.price === 0 ? (
-            <div className="text-4xl font-bold text-gray-900">Gratis</div>
+            <div className="text-4xl font-bold text-gray-900">Free</div>
           ) : (
             <div className="flex items-baseline">
               <span className="text-4xl font-bold text-gray-900">
                 ${plan.price}
               </span>
-              <span className="text-gray-600 ml-2">/bulan</span>
+              <span className="text-gray-600 ml-2">/month</span>
             </div>
           )}
         </div>
@@ -172,7 +121,7 @@ function PricingCard({
             disabled
             className="w-full py-3 px-6 rounded-lg font-semibold bg-gray-100 text-gray-500 cursor-not-allowed"
           >
-            Paket Saat Ini
+            Current Plan
           </button>
         ) : (
           <button
@@ -182,7 +131,7 @@ function PricingCard({
                 : "bg-gray-900 text-white hover:bg-gray-800"
             }`}
           >
-            Upgrade Sekarang
+            Upgrade Now
           </button>
         )}
       </div>
@@ -208,10 +157,10 @@ export default function Pricing() {
           className="text-center mb-16"
         >
           <h2 className="font-display text-5xl md:text-6xl font-bold mb-4 text-dark">
-            Pilih Paket Anda
+            Choose Your Plan
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Harga yang fleksibel untuk individu dan tim dengan segala ukuran
+            Flexible pricing for individuals and teams of all sizes
           </p>
         </motion.div>
 

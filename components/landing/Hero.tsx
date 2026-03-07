@@ -18,7 +18,7 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 text-gradient"
           >
-            Produktivitas Maksimal dengan Kekuatan AI
+            Maximum Productivity with the Power of AI
           </motion.h1>
 
           <motion.p
@@ -27,10 +27,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl"
           >
-            FocusKit menghadirkan toolkit produktivitas berbasis AI yang
-            membantu Anda menyelesaikan lebih banyak pekerjaan dalam waktu lebih
-            singkat. Otomasi cerdas, analisis mendalam, dan insight yang
-            actionable.
+            FocusKit delivers an AI-powered productivity toolkit that helps you
+            accomplish more in less time. Smart automation, deep analysis, and
+            actionable insights — all in one place.
           </motion.p>
 
           <motion.div
@@ -43,7 +42,7 @@ export default function Hero() {
               href="/register"
               className="bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-secondary transition-all hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-1 text-center"
             >
-              Coba Gratis
+              Try for Free
             </Link>
           </motion.div>
         </div>
